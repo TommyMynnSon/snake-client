@@ -27,6 +27,5 @@ const connect = () => {
 };
 
 module.exports = {
-  connect,
-  setupInput
+  connect
 };
