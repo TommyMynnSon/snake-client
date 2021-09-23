@@ -19,6 +19,18 @@ const handleUserInput = (key) => {
     connection.write('Move: right');
   }
 
+  if (key === 'i') {
+    connection.write('Say: Noob!');
+  }
+
+  if (key === 'o') {
+    connection.write('Say: I\'m coming for you ...');
+  }
+
+  if (key === 'p') {
+    connection.write('Say: I\'m unstoppable');
+  }
+
   if (key === '\u0003') {
     console.log('Disconnecting ...')
     console.log('Successfully disconnected from game server')
