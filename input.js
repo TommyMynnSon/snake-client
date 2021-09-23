@@ -6,8 +6,8 @@ let connection;
 // Determines what happens depending on keyboard input
 const handleUserInput = (key) => {
   if (key === '\u0003') {
-    console.log('Disconnecting ...')
-    console.log('Successfully disconnected from game server')
+    console.log('Disconnecting ...');
+    console.log('Successfully disconnected from game server');
     process.exit();
   } else {
     connection.write(VALID_INPUTS[key]);
